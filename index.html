@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-gray-300">
+    <div class="flex justify-center flex-col items-center gap-5 mt-5">
+      <h1 class="text-2xl bg-gray-600 px-5 py-3 text-white rounded-3xl">Registration Form</h1>
+      <a href="/dashboard.html">Go to Dashboard</a>
+      <form class="flex gap-4">
+        <input
+          type="email"
+          id="email"
+          placeholder="enter your email"
+          class="p-2 border border-transparent border-solid rounded-xl bg-gray-600 text-gray-100 focus:outline-none focus:border-amber-500 placeholder:text-gray-800"
+        />
+
+        <input
+          id="password"
+          type="password"
+          class="p-2 border border-transparent border-solid rounded-xl bg-gray-600 text-gray-100 focus:outline-none focus:border-amber-500 placeholder:text-gray-800"
+          placeholder="password"
+        />
+        <button id="submitButton" type="submit" class="bg-blue-400 text-white px-5 py-2 rounded-2xl focus:outline-none">
+          Register
+        </button>
+      </form>
+      <div id="displayText" class="text-red-400 text-sm"></div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
